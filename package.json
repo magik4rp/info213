@@ -1,0 +1,19 @@
+{
+  "name": "beehomedemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://smeyerISchool@bitbucket.org/beehome/beehomedemo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/beehome/beehomedemo#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
