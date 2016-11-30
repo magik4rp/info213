@@ -1,10 +1,4 @@
-{ "engines": {
-    "node": "6.9.1"
-  },
-  "scripts": {
-    "start": "node app.js"
-  },
-  "name": "beehomedemo",
+{ "name": "beehomedemo",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
@@ -29,5 +23,11 @@
     "in",
     "place",
     "info213"
-  ]
+  ],
+  "engines": {
+    "node": "6.9.1"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
 }
