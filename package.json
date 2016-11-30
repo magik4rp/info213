@@ -1,4 +1,9 @@
-{
+{ "engines": {
+    "node": "6.9.1"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
   "name": "beehomedemo",
   "version": "1.0.0",
   "main": "app.js",
@@ -9,12 +14,20 @@
     "type": "git",
     "url": "git+https://smeyerISchool@bitbucket.org/beehome/beehomedemo.git"
   },
-  "author": "",
+  "author": "Frances Thai, Yifei Liu, Jessica Kwon, Sam Meyer, Nancy Yang",
   "license": "ISC",
   "homepage": "https://bitbucket.org/beehome/beehomedemo#readme",
   "dependencies": {
+    "ejs": "2.4.1",
     "express": "^4.14.0"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "Beehome application for Info 213 class",
+  "keywords": [
+    "beehome",
+    "aging",
+    "in",
+    "place",
+    "info213"
+  ]
 }
