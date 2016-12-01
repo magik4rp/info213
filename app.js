@@ -12,6 +12,9 @@ app.set('view engine', 'ejs');
 app.get('/', function(request, response) {
   response.render('pages/home');
 });
+app.get('/sign-in', function(request, response) {
+  response.render('pages/sign_in');
+});
 
 app.get('*', function(req, res){
   res.render('pages/404');

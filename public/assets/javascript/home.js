@@ -20,11 +20,11 @@ var aboutInformation = {
 $("#home-container").ready(function() {
 	console.log("hiya");
 
-	$(".radio").click(function() {
+	$(".form-group").click(function() {
 		$(".radio").each(function(i, radio) {
 			$(radio).removeClass("active");
 		});
-		$(this).addClass("active");
+		$(this).children().first().addClass("active");
 		var who = $(this).attr("id");
 		console.log("You clicked on " + who);
 		var information = aboutInformation[who];
