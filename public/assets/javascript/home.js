@@ -31,6 +31,14 @@ $("#home-container").ready(function() {
 		console.log(information);
 		$(".about-text").each(function(i ,text) {
 			var textId = $(this).attr("id");
+			if (textId == "2" && who == "tenant") {
+				console.log("THIS SHOULD BE HERE");
+				$(this).prev().attr("src", "assets/images/skills.png");
+			}
+			if (textId == "2" && who == "landlord") {
+				console.log("THIS SHOULD BE HERE");
+				$(this).prev().attr("src", "assets/images/icon2.png");
+			}
 			var title = information[textId]["title"];
 			var text = information[textId]["text"]
 			var newText = "<b>" + title + "</b><br>" + text;

@@ -9,13 +9,29 @@
 	</head>
 	<body>
 		<div id="navigation-bar">
-			<a id="logo-section" href="/home.html">
+			<a id="logo-section" href="/">
 				<img id="logo" src="assets/images/logo.png">
 				<div id="logo-text">BeeHome</div>
 			</a>
 			<div id="sign-up-button"><a href="/sign-in">Sign In</a></div>
 		</div>
 		<div id="sign-in-container">
+			<div id="sign-in-content">
+				<h2> Sign In </h2>
+				<form action="/dashboard" id="sign-in-form">
+					<input type="text" id="email" placeholder="E-Mail address">
+					<input type="password" id="password" placeholder="Password">
+					<a id="forgot" href="/forgot-password">Forgot Password?</a>
+					<input type="submit" id="sign-in-button" value="Sign In">
+					<div id="remember-me-row">
+						<input type="checkbox" id="remember-me">
+						<label for="remember-me">Keep me signed in</label>
+					</div>
+				</form>
+				<div id="get-started">
+					<p style="color: black;"> Don't have an account? </p> <a href="/sign-up" style="font-weight: bold; color: #1e415f;"> Get Started </a>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

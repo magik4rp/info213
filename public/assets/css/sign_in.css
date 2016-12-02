@@ -4,6 +4,25 @@ html, body {
 	height: 100%;
 	position: relative;
 	font-family: 'Noto Sans', sans-serif;
+	color: #1e415f;
+}
+input {
+	color: #1e415f;
+	font-size: 14px;
+}
+input:focus {
+	outline: none;
+}
+input::-webkit-input-placeholder {
+	color: #1e415f;
+	font-size: 14px;
+}
+input[type="text"], input[type="password"] {
+	border-radius: 5px;
+	border: solid 2px #1e415f;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 h2, p {
 	margin: 0px ;
@@ -11,6 +30,7 @@ h2, p {
 a {
 	text-decoration: none;
 }
+
 #navigation-bar {
 	z-index: 10;
 	padding-left: 20px;
@@ -68,4 +88,84 @@ a {
 }
 #sign-up-button a {
 	color: white !important;
+}
+#sign-in-container {
+	position: absolute;
+	top: 75px;
+	width: 100%;
+	height: calc(100% - 75px);
+}
+#sign-in-content {
+	position: relative;
+	width: 40%;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0 auto;
+}
+#sign-in-content input[type="text"], #sign-in-content input[type="password"] {
+	display: block;
+	position: relative;
+	height: 50px;
+	width: 100%;
+	margin-top: 25px;
+}
+#forgot {
+	text-decoration: none;
+	font-size: 12px;
+	text-align: left;
+	position: relative;
+	display: block;
+	margin-top: 10px;
+	color: #1e415f;
+	transition: 0.3s;
+}
+a:visited {
+	color: #F47E54;
+	transition: 0.3s;
+}
+#forgot:hover {
+	color: #F47E54;
+}
+#sign-in-button {
+	cursor: pointer;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 200px !important;
+	height: 40px !important;
+	background: #F47E54;
+	color: white;
+	text-transform: white;
+	font-size: 16px;
+/*	line-height: 40px;*/
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	text-transform: uppercase;
+	border: none !important;
+	display: block;
+}
+#remember-me-row label{
+	display: inline-block;
+	position: relative;
+	font-size: 12px;
+}
+#remember-me-row input{
+	display: inline-block;
+	position: relative;
+}
+#remember-me-row {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 10px;
+}
+#sign-in-content p {
+	display: inline-block;
+	text-align: center;
+}
+#get-started {
+	margin-top: 20px;
+	text-align: center;
 }
