@@ -59,7 +59,7 @@ a {
 	display: inline-block;
 	color: #1e415f;
 }
-#sign-up-button {
+#nav-sign-in-button {
 	background-color: #1e415f;
 	color: white;
 	text-transform: uppercase;
@@ -76,7 +76,7 @@ a {
 	font-size: 14px;
 	cursor: pointer;
 }
-#sign-up-button a {
+#nav-sign-in-button a {
 	color: white !important;
 }
 #home-container {

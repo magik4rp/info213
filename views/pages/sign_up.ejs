@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>BeeHome</title>
+		<link rel="shortcut icon" type="image/png" href="assets/images/logo.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="assets/javascript/sign_in.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/sign_up.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	</head>
+	<body>
+		<% include ../partials/header %>
+		<div id="sign-up-container">
+			<div id="sign-up-content">
+				<h2> Sign Up</h2>
+				<form action="/dashboard" id="sign-up-form">
+					<input type="text" id="email" placeholder="E-Mail address">
+					<input type="password" id="password" placeholder="Password">
+					<div id="show-password">Show Password</div>
+					<div id="who-are-you-row">
+						<p>I am</p>
+						<div class="form-group" id="landlord">
+							<div class="radio active" id="landlord"></div>
+							I am renting out a room
+						</div>
+						<div class="form-group" id="tenant">
+							<div class="radio" id="tenant"></div>
+							I am looking for a room
+						</div>
+					</div>
+					<input type="submit" id="sign-up-button" value="Sign Up">
+					
+				</form>
+				<div id="sign-in-bottom">
+					<p style="color: black;"> Already have an account? </p> <a href="/sign-in" style="font-weight: bold; color: #1e415f;"> Sign In </a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

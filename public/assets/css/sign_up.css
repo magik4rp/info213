@@ -89,20 +89,20 @@ a {
 #nav-sign-in-button a {
 	color: white !important;
 }
-#sign-in-container {
+#sign-up-container {
 	position: absolute;
 	top: 75px;
 	width: 100%;
 	height: calc(100% - 75px);
 }
-#sign-in-content {
+#sign-up-content {
 	position: relative;
 	width: 40%;
 	top: 50%;
 	transform: translateY(-50%);
 	margin: 0 auto;
 }
-#sign-in-content input[type="text"], #sign-in-content input[type="password"] {
+#sign-up-content input[type="text"], #sign-up-content input[type="password"] {
 	display: block;
 	position: relative;
 	height: 50px;
@@ -127,7 +127,7 @@ a:visited {
 #forgot:hover {
 	color: #F47E54;
 }
-#sign-in-button {
+#sign-up-button {
 	cursor: pointer;
 	position: relative;
 	margin: 0 auto;
@@ -162,11 +162,11 @@ a:visited {
 	text-align: center;
 	margin-top: 10px;
 }
-#sign-in-content p {
+#sign-up-content p {
 	display: inline-block;
 	text-align: center;
 }
-#get-started {
+#sign-in-bottom {
 	margin-top: 20px;
 	text-align: center;
 }
@@ -183,4 +183,35 @@ a:visited {
 	font-weight: lighter;
 	border-radius: 5px;
 	cursor: pointer;
+}
+.form-group {
+	position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    /* margin-top: 15px; */
+    /* margin-bottom: 15px; */
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+.radio {
+	position: relative;
+	display: inline-block;
+	border-radius: 50%;
+	border: solid 2px black;
+	height: 10px;
+	width: 10px;
+	cursor: pointer;
+}
+.radio.active {
+	background-color: #5ED2B6;
+}
+#who-are-you-row p {
+	display: inline-block;
+	margin-right: 20px;
+
+}
+#who-are-you-row {
+	margin-top: 75px;
+	text-align: center;
 }

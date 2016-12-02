@@ -18,6 +18,9 @@ app.get('/', function(request, response) {
 app.get('/sign-in', function(request, response) {
   response.render('pages/sign_in');
 });
+app.get('/sign-up', function(request, response) {
+  response.render('pages/sign_up');
+});
 
 app.get('*', function(req, res){
   res.render('pages/404');

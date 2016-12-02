@@ -20,4 +20,12 @@ $("#sign-in-container").ready(function()
           $input.remove();
           $input = rep;
       $(this).insertAfter($input);
-    });})
+    });
+     $(".form-group").click(function() {
+        console.log("Clicked it");
+        $(".radio").each(function(i, radio) {
+          $(radio).removeClass("active");
+        });
+        $(this).children().first().addClass("active");
+    });
+  })
