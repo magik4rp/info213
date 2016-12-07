@@ -12,9 +12,9 @@
 		<% include ../partials/header %>
 		<div id="task-container" class="container">
 			<% include ../partials/step-bar %>
-			<div id="tasks-container">
+			<div id="tasks-container" class="content-box">
 				<div id="tasks">
-					<h3>Select tasks you would like your tenant to do.</h3>
+					<h3 class="onboarding-title">Select tasks you would like your tenant to do.</h3>
 					<% tasks.forEach(function(task) { %>
 						<div class="task"><%= task %> </div>
 				    <% }); %>
@@ -22,7 +22,7 @@
 			</div>
 			<div id="prev-next-bar">
 <!-- 				<a href="/" class="prev-next-button" id="prev">Previous Step</a> -->
-				<a href="/" class="prev-next-button" id="next">Next Step</a>
+				<a href="/pref/landlord/tenant" class="prev-next-button" id="next">Next Step</a>
 
 			</div>
 		</div>

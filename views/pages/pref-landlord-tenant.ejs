@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>BeeHome</title>
+		<link rel="shortcut icon" type="image/png" href="/assets/images/logo.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="/assets/css/application.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/tenant-preferences.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+		<script src="/assets/javascript/tenant-preferences.js"></script>
+	</head>
+	<body>
+		<% include ../partials/header %>
+		<div id="tenant-preferences-container" class="container">
+			<% include ../partials/step-bar %>
+			<div class="content-box" id="tenant-preferences">
+				<h3 class="onboarding-title">Your Preferred Tenant</h3>
+			</div>
+			<div id="prev-next-bar">
+				<a href="/pref/landlord/task" class="prev-next-button" id="prev">Previous Step</a>
+				<a href="/pref/landlord/profile" class="prev-next-button" id="next">Next Step</a>
+
+			</div>
+		</div>
+	</body>
+</html>
