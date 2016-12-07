@@ -26,7 +26,8 @@ app.get('/pref/landlord/task', function(request, response) {
 });
 
 app.get('/pref/landlord/tenant', function(request, response) {
-  response.render('pages/pref-landlord-tenant');
+	var states = ["AK", "AL", "AR", "AZ", "CA", "CO", "CT", "DC", "DE", "FL", "GA", "HI", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY"];
+  response.render('pages/pref-landlord-tenant', {states: states});
 });
 app.get('/pref/landlord/profile', function(request, response) {
   response.render('pages/pref-landlord-profile');

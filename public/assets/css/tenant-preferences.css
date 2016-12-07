@@ -3,3 +3,52 @@
 	height: 70%;
 	margin: 0 auto;
 }
+#tenant-preferences-form {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50%;
+	margin: 0 auto;
+	color: #1e415f;
+}
+.form-row {
+	position: relative;
+	display: block;
+}
+.form-row label {
+	position: relative;
+	display: inline-block;
+	font-weight: bolder;
+	color: #1e415f;
+	width: 150px;
+	line-height: 40px;
+
+}
+.age {
+	width: 60px;
+	margin: 10px;
+	text-align: center;
+	font-weight: lighter;
+}
+input#city {
+	margin: 10px;
+	font-weight: lighter;
+	width: 150px;
+}
+select {
+	height: 40px;
+    width: calc(100% - 180px);
+    margin: 10px;
+    background: white;
+    border: 2px solid #1e415f;
+    font-size: 1em;
+    color: #1e415f;
+    background-image: none;
+    font-weight: lighter;
+}
+select:focus {
+	outline: none;
+}
+select#city {
+	width: calc(100% - 350px);
+}

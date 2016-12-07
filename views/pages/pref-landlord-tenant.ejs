@@ -13,7 +13,48 @@
 		<div id="tenant-preferences-container" class="container">
 			<% include ../partials/step-bar %>
 			<div class="content-box" id="tenant-preferences">
-				<h3 class="onboarding-title">Your Preferred Tenant</h3>
+				<div id="tenant-preferences-form">
+					<h3 class="onboarding-title">Your Preferred Tenant</h3>
+					<div class="form-row">
+						<label for="age">Age</label>
+						<input class="age" type="text" placeholder="min" value="18">
+						to
+						<input class="age" type="text" placeholder="max" value="60">
+						years old
+					</div>
+					<div class="form-row">
+						<label for="gender">Gender</label>
+						<select>
+						  <option value="no-preference">No Preference</option>
+						  <option value="male">Male</option>
+						  <option value="female">Female</option>
+						</select>
+					</div>
+					<div class="form-row">
+						<label for="smoking">Smoking</label>
+						<select>
+						  <option value="no-preference">No Preference</option>
+						  <option value="no">No Smoking</option>
+						</select>
+					</div>
+					<div class="form-row">
+						<label for="pets">Pets</label>
+						<select>
+						  <option value="no-preference">No Preference</option>
+						  <option value="no">No pets</option>
+						  <option value="cats">Cats Only</option>
+						</select>
+					</div>
+					<div class="form-row">
+						<label for="city">Residence</label>
+						<input id="city" type="text" placeholder="City">
+						<select id="city" placeholder="State">
+							<% states.forEach(function(state) { %>
+								<option value=<%= state %>><%= state %> </option>
+					    	<% }); %>
+						</select>
+					</div>
+				</div>
 			</div>
 			<div id="prev-next-bar">
 				<a href="/pref/landlord/task" class="prev-next-button" id="prev">Previous Step</a>
