@@ -2,13 +2,29 @@
 	<head>
 		<title>BeeHome</title>
 		<link rel="shortcut icon" type="image/png" href="/assets/images/logo.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="/assets/css/application.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/tasks.css">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+		<script src="/assets/javascript/tasks.js"></script>
 	</head>
 	<body>
 		<% include ../partials/header %>
 		<div id="task-container" class="container">
 			<% include ../partials/step-bar %>
+			<div id="tasks-container">
+				<div id="tasks">
+					<h3>Select tasks you would like your tenant to do.</h3>
+					<% tasks.forEach(function(task) { %>
+						<div class="task"><%= task %> </div>
+				    <% }); %>
+				</div>
+			</div>
+			<div id="prev-next-bar">
+<!-- 				<a href="/" class="prev-next-button" id="prev">Previous Step</a> -->
+				<a href="/" class="prev-next-button" id="next">Next Step</a>
+
+			</div>
 		</div>
 	</body>
 </html>
