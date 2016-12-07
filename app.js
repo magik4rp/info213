@@ -19,6 +19,18 @@ app.get('/sign-in', function(request, response) {
 app.get('/sign-up', function(request, response) {
   response.render('pages/sign_up');
 });
+app.get('/pref/landlord/task', function(request, response) {
+  response.render('pages/pref-landlord-task');
+});
+app.get('/pref/landlord/tenant', function(request, response) {
+  response.render('pages/pref-landlord-tenant');
+});
+app.get('/pref/landlord/profile', function(request, response) {
+  response.render('pages/pref-landlord-profile');
+});
+app.get('/pref/landlord/listing', function(request, response) {
+  response.render('pages/pref-landlord-listing');
+});
 
 app.get('*', function(req, res){
   res.render('pages/404');
