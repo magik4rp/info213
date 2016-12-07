@@ -24,6 +24,7 @@ app.get('/pref/landlord/task', function(request, response) {
 	 'Laundry', 'Grocery Shopping', 'Yardwork', 'Petcare', 'Computer Help', 'Running Errands'];
   response.render('pages/pref-landlord-task', {tasks: tasks});
 });
+
 app.get('/pref/landlord/tenant', function(request, response) {
   response.render('pages/pref-landlord-tenant');
 });

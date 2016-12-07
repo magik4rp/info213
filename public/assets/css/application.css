@@ -3,10 +3,17 @@ html, body {
 	height: 100%;
 	width: 100%;
 	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	background-color: #FAF9F8;
+}
+a {
+	text-decoration: none;
 }
 .container {
 	position: relative;
 	width: 100%;
+	height: calc(100% - 75px);
+	margin-top: 75px;
 }
 #navigation-bar {
 	z-index: 10;
@@ -27,7 +34,7 @@ html, body {
     top: 50%;
     transform: translateY(-50%);
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 24px;
     color: black;
 }
@@ -65,4 +72,20 @@ html, body {
 }
 #nav-sign-in-button a {
 	color: white !important;
+}
+#step-bar {
+	position: relative;
+	display: block;
+	text-align: center;
+	padding: 20px 10px 10px 20px;
+	color: #1e415f;
+}
+.step {
+	position: relative;
+	display: inline-block;
+	margin: 10px 20px 10px 20px;
+}
+.step.active {
+	font-weight: bold;
+	border-bottom: solid 3px #1e415f;
 }
