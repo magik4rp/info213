@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="/assets/css/application.css">
 	<link rel="stylesheet" type="text/css" href="/assets/css/pref-landlord-listing.css">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <script src="/assets/javascript/pref-landlord-listing.js"></script>
 	</head>
 	<body>
 		<% include ../partials/header %>
@@ -50,10 +51,26 @@
         </div>
       </div>
       <div id="prev-next-bar">
-				<a href="/pref/landlord/task" class="prev-next-button" id="prev">Previous Step</a>
-				<a href="/pref/landlord/profile" class="prev-next-button" id="next">Next Step</a>
+				<a href="/pref/landlord/profile" class="prev-next-button" id="prev">Previous Step</a>
+				<a href="#" class="prev-next-button" id="draft">Save As Draft</a>
+				<a href="javascript:void(0)" class="prev-next-button" id="next">Publish</a>
 
 			</div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <!-- <span class="close">x</span> -->
+        <div id="prev-next-bar">
+          <h2>You are all set!</h2>
+          <p>We will send you an email<br>if someone is interested in your house.</p>
+          <a href="#" class="prev-next-button" id="dashboard-link">Go to Dashboard</a>
+          <a href="#" class="prev-next-button" id="listing-link">See my Listing</a>
+        </div>
+      </div>
+
     </div>
   </body>
 </html>
