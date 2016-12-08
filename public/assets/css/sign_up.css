@@ -121,11 +121,11 @@ a {
 	float: left;
 }
 a:visited {
-	color: #F47E54;
+	color: #F25449;
 	transition: 0.3s;
 }
 #forgot:hover {
-	color: #F47E54;
+	color: #F25449;
 }
 #sign-up-button {
 	cursor: pointer;
@@ -134,7 +134,7 @@ a:visited {
 	margin-top: 75px;
 	width: 200px !important;
 	height: 40px !important;
-	background: #F47E54;
+	background: #F25449;
 	color: white;
 	text-transform: white;
 	font-size: 16px;

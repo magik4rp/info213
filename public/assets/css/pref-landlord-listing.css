@@ -68,16 +68,16 @@ span.full-width {
 }
 
 .description-title {
-  color: #F47E54;
+  color: #F25449;
   margin-left: 10px;
 }
 
 .prev-next-button#draft {
-	color: #F47E54;
+	color: #F25449;
 }
 
 .prev-next-button#dashboard-link, #listing-link {
-	color: #F47E54;
+	color: #F25449;
 }
 
 /* The Modal (background) */
