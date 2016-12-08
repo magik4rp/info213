@@ -39,6 +39,10 @@ app.get('/pref/landlord/listing', function(request, response) {
 app.get('/confirmation', function(request, response) {
   response.render('pages/confirmation');
 });
+app.get('/message/:name', function(request, response) {
+  var name = request.params.name;
+  response.render('pages/individual-message');
+});
 
 app.get('*', function(req, res){
   res.render('pages/404');
