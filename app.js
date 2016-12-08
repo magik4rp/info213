@@ -35,6 +35,9 @@ app.get('/pref/landlord/profile', function(request, response) {
 app.get('/pref/landlord/listing', function(request, response) {
   response.render('pages/pref-landlord-listing');
 });
+app.get('/confirmation', function(request, response) {
+  response.render('pages/confirmation');
+});
 
 app.get('*', function(req, res){
   res.render('pages/404');
@@ -43,4 +46,3 @@ app.get('*', function(req, res){
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
-

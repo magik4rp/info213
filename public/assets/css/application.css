@@ -14,7 +14,7 @@ input:focus {
 	outline: none;
 	border: none;
 }
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="number"], input[type="date"], select, textarea {
 	border: 2px solid #1e415f;
 	border-radius: 5px;
 	min-height: 40px;
@@ -33,7 +33,7 @@ input[type="text"], input[type="password"] {
 }
 :-moz-placeholder { /* Firefox 18- */
   color: #1e415f;
-} 
+}
 .container {
 	position: relative;
 	width: 100%;
