@@ -1,15 +1,14 @@
 $("#sign-up-content").ready(function() {
 	$("#confirm-password").keyup(function() {
-		console.log("pressed!");
-		console.log($(this).val());
-		console.log($("#confirm-password").val());
-		if ($(this).val() == $("#password").val()) {
-			console.log("it's the same!");
-			$("#confirmed").css("display", "block");
-			$("#confirmed").addClass("active");
+		$("#confirmed").css("display", "block");
+		$("#confirmed").addClass("active");
+		if ($(this).val() == "") {
+			$("#confirmed").attr("src", "/assets/images/error.png");
+		}
+		else if ($(this).val() == $("#password").val()) {
+			$("#confirmed").attr("src", "/assets/images/checkmark.png");
 		} else {
-			$("#confirmed").css("display", "none");
-			$("#confirmed").removeClass("active");
+			$("#confirmed").attr("src", "/assets/images/error.png");
 		}
 	});
 });
