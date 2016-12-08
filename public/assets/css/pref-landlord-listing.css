@@ -1,11 +1,10 @@
-.content-box#tenant-preferences {
-	width: 80%;
-	/*height: 70%;*/
-	margin: 0 auto;
-}
 
 #listing-container {
   /*padding-top: 75px;*/
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  color: #1e415f;
 }
 
 #listing-left {
@@ -20,7 +19,21 @@
   position: absolute;
   margin-left: 30px;
 }
+#landlord-listing {
+  width: 90%;
+  margin: 0 auto;
+}
+#home-img {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
 
+#home-img-container b {
+  position: absolute;
+
+}
 input {
 	color: #1e415f;
 	font-size: 14px;
@@ -65,6 +78,9 @@ span.full-width {
 
 .form-row {
   padding: 10px;
+}
+.form-row label {
+  width: 175px;
 }
 
 .description-title {

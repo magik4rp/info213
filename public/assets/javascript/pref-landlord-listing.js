@@ -3,6 +3,12 @@ $("#tenant-preferences-container").ready(function() {
 })
 
 $(document).ready(function() {
+	$('#home-picture').change(function(e) {
+        var img = URL.createObjectURL(e.target.files[0]);
+        $("#home-img").attr("src", img);
+        $("#home-img-container").css("border", "none");
+        $("#home-img-container b").remove();
+    });
 
 	// Get the modal
 	var modal = document.getElementById('myModal');
@@ -29,4 +35,5 @@ $(document).ready(function() {
 	        modal.style.display = "none";
 	    }
 	}
+	
 })

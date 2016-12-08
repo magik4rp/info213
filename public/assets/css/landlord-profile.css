@@ -1,7 +1,6 @@
 .content-box#landlord-profile {
 	position: relative;
 	width: 80%;
-	height: 100%;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -11,6 +10,7 @@
 	display: inline-block;
 	text-align: left;
 	position: relative;
+	margin-top: 20px;
 }
 .content-column.left {
 	width: calc(30% - 20px);
@@ -21,8 +21,9 @@
 .form-row {
 	position: relative;
 	display: block;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	color: #1e415f;
+
 }
 .form-row label {
 	position: relative;
@@ -40,7 +41,7 @@ input {
 }
 select {
 	height: 40px;
-    width: calc(100% - 180px);
+    width: calc(100% - 110px);
     background: white;
     border: 2px solid #1e415f;
     font-size: 1em;
@@ -58,6 +59,7 @@ select#city {
 	width: 60px;
 	text-align: center;
 	font-weight: lighter;
+	margin-right: 10px;
 
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -75,3 +77,37 @@ select#city {
 input.paragraph {
 	height: 200px;
 }
+textarea {
+	position: relative;
+	display: inline-block;
+	width: calc(100% - 110px);
+}
+#avatar-section {
+	position: relative;
+	display: block;
+	float: right;
+	margin-right: 35px;
+	text-align: center;
+	color: #1e415f !important;
+}
+#avatar {
+	cursor: pointer;
+	height: 150px;
+	width: 150px;
+	border: 2px solid #1e415f;
+	border-radius: 50% !important;
+	font-size: 2em !important;
+	
+	position: relative;
+	line-height: 150px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+#img {
+	position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+    

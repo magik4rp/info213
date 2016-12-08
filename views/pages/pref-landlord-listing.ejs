@@ -13,7 +13,7 @@
 		<% include ../partials/header %>
     <div id="tenant-preferences-container" class="container">
 			<% include ../partials/step-bar %>
-			<div class="content-box" id="tenant-preferences">
+			<div class="content-box" id="landlord-listing">
     		<div id="listing-container">
           <h3 class="description-title">Tell us about your home.</h3>
           <form action="" id="landlord-listing-form">
@@ -41,11 +41,14 @@
               <div class="form-row"><label>Zip Code</label><span class="full-width" style="width: 150px"><input type="text"></span></div>
             </div>
             <div id="listing-right">
-              <div style = "border-style: solid;border-width: 2px; width:400px; height: 230px; display: flex; justify-content: center; align-items: center; border-radius:5px"><b>+</b></div>
+              <label for="home-picture" id="home-img-container" style = "cursor: pointer; border-style: solid;border-width: 2px; width:400px; height: 230px; display: flex; justify-content: center; align-items: center; border-radius:5px, position: relative; margin-bottom: 20px;">
+              <img id="home-img"><b>+</b></label>
               <div>
-                <div style="width:400px; text-align: center; margin-top:20px"><p><b>Add a photo</b><br>Photos help establish trust</p></div>
+               <input type="file" id="home-picture" style="display: none;">
+                <div style="width:400px; text-align: center; margin-top:20px">
+                <p><b>Add a photo</b><br>Photos help establish trust</p></div>
               </div>
-              <div><label><b>Description</b><br><textarea style="width:400px; height:105px" placeholder="Residential neighborhood, one cat, renting one bedroom of a 4-bedroom house."></textarea></label></div>
+              <div><label><b>Description</b><br><textarea style="margin-top: 10px; width:400px; height:105px" placeholder="Residential neighborhood, one cat, renting one bedroom of a 4-bedroom house."></textarea></label></div>
             </div>
           </form>
         </div>

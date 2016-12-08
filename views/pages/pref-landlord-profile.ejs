@@ -10,10 +10,21 @@
 	</head>
 	<body>
 		<% include ../partials/header %>
-		<div id="tenant-preferences-container" class="container">
+		<div id="profile-preferences-container" class="container">
 			<% include ../partials/step-bar %>
 			<div class="content-box" id="landlord-profile">
-				<div class="content-column left"></div>
+			<h3 class="onboarding-title" style="margin-top: 20px;">Let us know a little bit more about you. It helps us in the matching process.</h3>
+				<div class="content-column left">
+					<label for = "profile-picture" id="avatar-section">
+						<div id="avatar">
+							+
+							<img id="img">
+						</div>
+						<p style="margin: 0;"> <b> Add a profile picture </b> </p>
+						<p style="margin: 0;"> Photos help establish trust. </p>
+					</label>
+					<input style="display: none;" type="file" id="profile-picture">
+				</div>
 				<div class="content-column right">
 					<div class="form-row">
 						<label for="name">Name</label>
@@ -56,7 +67,7 @@
 						</select>
 					</div>
 					<div class="form-row">
-						<label for="bio">Bio</label>
+						<label for="bio" style="float:left;">Bio</label>
 						<textarea name="paragraph_text" cols="50" rows="10"></textarea>
 					</div>
 				</div>
