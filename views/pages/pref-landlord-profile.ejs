@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>BeeHome</title>
+		<link rel="shortcut icon" type="image/png" href="/assets/images/logo.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="/assets/css/application.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/landlord-profile.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+		<script src="/assets/javascript/landlord-profile.js"></script>
+	</head>
+	<body>
+		<% include ../partials/header %>
+		<div id="tenant-preferences-container" class="container">
+			<% include ../partials/step-bar %>
+			<div class="content-box" id="landlord-profile">
+				<div class="content-column left"></div>
+				<div class="content-column right">
+					<div class="form-row">
+						<label for="name">Name</label>
+						<input id="name" type="text" placeholder="First Last" >
+					</div>
+					<div class="form-row">
+						<label for="age">Age</label>
+						<input class="age" type="text" placeholder="Age">
+						years old
+					</div>
+					<div class="form-row">
+						<label for="gender">Gender</label>
+						<select>
+						  <option value="male">Male</option>
+						  <option value="female">Female</option>
+						  <option value="other">Other</option>
+						</select>
+					</div>
+					<div class="form-row">
+						<label for="status">Status</label>
+						<select>
+						  <option value="retired">Retired</option>
+						  <option value="working">Working</option>
+						</select>
+					</div>
+					<div class="form-row">
+						<label for="smoking">Smoking</label>
+						<select>
+						  <option value="yes">Yes</option>
+						  <option value="no">No</option>
+						</select>
+					</div>
+					<div class="form-row">
+						<label for="pets">Pets</label>
+						<select>
+						  <option value="yes">No</option>
+						  <option value="cat">Cat</option>
+						  <option value="dog">Dog</option>
+						  <option value="other">Other</option>
+						</select>
+					</div>
+					<div class="form-row">
+						<label for="bio">Bio</label>
+						<textarea name="paragraph_text" cols="50" rows="10"></textarea>
+					</div>
+				</div>
+			</div>
+			<div id="prev-next-bar">
+				<a href="/pref/landlord/tenant" class="prev-next-button" id="prev">Previous Step</a>
+				<a href="/pref/landlord/listing" class="prev-next-button" id="next">Next Step</a>
+
+			</div>
+		</div>
+	</body>
+</html>
