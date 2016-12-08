@@ -7,6 +7,9 @@ $("#sign-up-content").ready(function() {
 			console.log("it's the same!");
 			$("#confirmed").css("display", "block");
 			$("#confirmed").addClass("active");
+		} else {
+			$("#confirmed").css("display", "none");
+			$("#confirmed").removeClass("active");
 		}
 	});
 });
