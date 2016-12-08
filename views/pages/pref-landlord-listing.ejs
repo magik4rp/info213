@@ -10,8 +10,50 @@
 	</head>
 	<body>
 		<% include ../partials/header %>
-		<div id="listing-container">
-      Post a House!
+    <div id="tenant-preferences-container" class="container">
+			<% include ../partials/step-bar %>
+			<div class="content-box" id="tenant-preferences">
+    		<div id="listing-container">
+          <h3 class="description-title">Tell us about your home.</h3>
+          <form action="" id="landlord-listing-form">
+            <div id="listing-left">
+              <div class="form-row">
+                <label>Rent per month ($)</label>
+                <span class="full-width"><input type="text"></span>
+              </div>
+              <div class="form-row"><label style="float:left">Bathroom</label><span class="full-width"><select>
+                <option>Private</option>
+                <option>Shared</option>
+              </select></span>
+              </div>
+              <div class="form-row"><label>Date Available</label><span class="full-width"><input type="date"></span></div>
+              <h3 class="description-title" style="padding-top: 30px">Where is your home located?</h3>
+              <div class="form-row"><label>Street Address</label><span class="full-width"><input type="text"></span></div>
+              <div class="form-row"><label>City</label><span><input style="width: 300px; float:left" type="text"></span>
+                <span class="full-width" style="padding-left:10px"><select>
+                  <option>CA-California</option>
+                  <option>NV-Nevada</option>
+                  <option>OR-Oregon</option>
+                  <option>WA-Washington</option>
+                </select></span>
+              </div>
+              <div class="form-row"><label>Zip Code</label><span class="full-width" style="width: 150px"><input type="text"></span></div>
+            </div>
+            <div id="listing-right">
+              <div style = "border-style: solid;border-width: 2px; width:400px; height: 230px; display: flex; justify-content: center; align-items: center; border-radius:5px"><b>+</b></div>
+              <div>
+                <div style="width:400px; text-align: center; margin-top:20px"><p><b>Add a photo</b><br>Photos help establish trust</p></div>
+              </div>
+              <div><label><b>Description</b><br><textarea style="width:400px; height:105px" placeholder="Residential neighborhood, one cat, renting one bedroom of a 4-bedroom house."></textarea></label></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="prev-next-bar">
+				<a href="/pref/landlord/task" class="prev-next-button" id="prev">Previous Step</a>
+				<a href="/pref/landlord/profile" class="prev-next-button" id="next">Next Step</a>
+
+			</div>
     </div>
   </body>
 </html>
