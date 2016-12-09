@@ -41,7 +41,7 @@ app.get('/confirmation', function(request, response) {
 });
 app.get('/message/:name', function(request, response) {
   var name = request.params.name;
-  response.render('pages/individual-message');
+  response.render('pages/individual-message', {name: name});
 });
 
 app.get('*', function(req, res){

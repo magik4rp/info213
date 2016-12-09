@@ -11,7 +11,74 @@
 	<body>
 		<% include ../partials/logged-in-header %>
 		<div id="individual-message-container" class="container">
-			<div class="content-box" id="individual-message-content"> </div>
+			<div class="back-button">
+				<a href="/messages"><h3> ← Back to All Messages </h3></a>
+			</div>
+			<div class="content-box" id="individual-message-content">
+				<div id="message-top">
+					<div class="message-top left">
+						<img src="/assets/images/newprofile.jpg" id="message-image">
+					</div>
+					<div class="message-top center">
+						<div id="top">
+							<h2 style="margin: 0px; margin-bottom: 10px;"> <%= name.charAt(0).toUpperCase() + name.slice(1) %> </h2>
+							<div class="badge" id="match">Top Match</div>
+							<div class="badge" id="verified">Verified</div>
+						</div>
+						<div id="bottom">
+							<div id="preferences">
+								<div>
+									<img style="display: inline-block; height: 20px;" src="/assets/images/skills.png">
+									<b style="display: inline-block">House Preferences</b>
+								</div>
+								<ul style="margin: 0;">
+									<li>Private bedroom</li>
+									<li>Private bathroom</li>
+									<li>Shared kitchen</li>
+								</ul>
+							</div>
+							<div id="skills">
+								<div>
+									<img style="display: inline-block; height: 20px;" src="/assets/images/icon2.png">
+									<b style="display: inline-block">5 Hours/Week</b>
+								</div>
+								<ul style="margin: 0;">
+									<li>Walk the dog</li>
+									<li>Grocery shopping</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="message-top right">
+						<div class="red-button" style="height: 40px; line-height: 40px; vertical-align: center; width: 200px;">
+							<img src="/assets/images/Asset23.png" style="height: 20px; transform: translateY(-70%);">
+							PHONE
+						</div>
+						<div class="red-button" style="height: 40px; line-height: 40px; vertical-align: center; width: 200px;">
+							<img src="/assets/images/Asset27.png" style="height: 15px; transform: translateY(-125%);">
+							EMAIL
+						</div>
+					</div>
+				</div>
+				<div id="message-bottom">
+					<div id="messages">
+						<div class="message">
+							<div class="message-time left">
+							12/8/2016
+							</div>
+							<div class="message-bubble left">
+								<div class="message-carrot-border left"></div>
+								<div class="message-carrot left"></div>
+								Hi, I'm interested in checking out your house. When would you be available?
+							</div>
+						</div>
+					</div>
+					<div id="input-message-container">
+						<textarea id="input-message" style="padding: 10px;"></textarea>
+						<div class="red-button" id="send-message">SEND</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
