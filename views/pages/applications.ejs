@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>BeeHome - Post Home</title>
+		<link rel="shortcut icon" type="image/png" href="/assets/images/logo.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  	<link rel="stylesheet" type="text/css" href="/assets/css/application.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/applications.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	  	<script src="/assets/javascript/individual-message.js"></script>
+	</head>
+	<body>
+		<% include ../partials/logged-in-header %>
+		<div id="individual-message-container" class="container">
+			<div class="back-button">
+				<h3 style="color: #1e415f; margin-bottom: 40px"> All Applications </h3>
+			</div>
+			<div>
+				<h3 style="color: #F25449;">Active</h3>
+				<div class="content-box" id="individual-message-content" style="text-align: center; padding: 50px;">
+					<i style="color: #F25449;"> No active applications.</i>
+				</div>
+			</div>
+			<div style="margin-top: 40px;">
+				<h3 style="color: #F25449;">Declined</h3>
+				<div class="content-box" id="individual-message-content" style="padding: 0px 40px 0px 40px; position: relative; height: 160px; width: calc(100% - 80px)">
+				<div id="message-top" style="border: none; position: relative">
+					<div class="message-top left">
+						<img style="width: 125px; height: 125px" src="/assets/images/newprofile.jpg" id="message-image">
+					</div>
+					<div class="message-top center">
+						<div id="top">
+							<h2 style="margin: 0px; margin-bottom: 5px;"> Frances </h2>
+							<div class="badge" id="match">Top Match</div>
+							<div class="badge" id="verified">Verified</div>
+						</div>
+						<div style="font-size: 12px;"> Applied 12/9/2016 </div>
+					</div>
+					<div class="message-top right">
+						<div class="red-button" style="height: 40px; line-height: 40px; vertical-align: center; width: 200px; top: 39px; position: relative">
+							MARK AS ACTIVE
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

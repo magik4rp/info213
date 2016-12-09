@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>BeeHome - Post Home</title>
+		<link rel="shortcut icon" type="image/png" href="/assets/images/logo.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  	<link rel="stylesheet" type="text/css" href="/assets/css/application.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/individual-message.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	  	<script src="/assets/javascript/individual-message.js"></script>
+	</head>
+	<body>
+		<% include ../partials/logged-in-header %>
+		<div id="individual-message-container" class="container">
+			<div class="back-button">
+				<a href="/applications"><h3> ← Back to All Applications </h3></a>
+			</div>
+			<div class="content-box" id="individual-message-content">
+				<div id="message-top" style="border: none;">
+					<div class="message-top left">
+						<img src="/assets/images/newprofile.jpg" id="message-image">
+					</div>
+					<div class="message-top center">
+						<div id="top">
+							<h2 style="margin: 0px; margin-bottom: 5px;"> <%= name.charAt(0).toUpperCase() + name.slice(1) %> </h2>
+							<div class="badge" id="match">Top Match</div>
+							<div class="badge" id="verified">Verified</div>
+						</div>
+						<div style="font-size: 12px; margin-bottom: 30px"> Applied 12/9/12 </div>
+						<div id="bottom">
+							<div id="preferences">
+								<div>
+									<img style="display: inline-block; height: 20px;" src="/assets/images/skills.png">
+									<b style="display: inline-block">House Preferences</b>
+								</div>
+								<ul style="margin: 0;">
+									<li>Private bedroom</li>
+									<li>Private bathroom</li>
+									<li>Shared kitchen</li>
+								</ul>
+							</div>
+							<div id="skills">
+								<div>
+									<img style="display: inline-block; height: 20px;" src="/assets/images/icon2.png">
+									<b style="display: inline-block">5 Hours/Week</b>
+								</div>
+								<ul style="margin: 0;">
+									<li>Walk the dog</li>
+									<li>Grocery shopping</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="message-top right">
+						<div class="red-button" style="height: 40px; line-height: 40px; vertical-align: center; width: 200px;">
+							<img src="/assets/images/Asset23.png" style="height: 20px; transform: translateY(-70%);">
+							PHONE
+						</div>
+						<div class="red-button" style="height: 40px; line-height: 40px; vertical-align: center; width: 200px;">
+							<img src="/assets/images/Asset27.png" style="height: 15px; transform: translateY(-125%);">
+							EMAIL
+						</div>
+					</div>
+					<div id="buttons-row" style="text-align: center; margin-top: 30px">
+						<div class="red-button filled"><a style="color: white;"href="/applications">Accept Application</a></div>
+						<div class="red-button filled"><a style="color: white;" href="/applications">Decline Application</a></div>
+					</div>
+				</div>
+				<div id="message-bottom" style="text-align: center;">
+					<img src="/assets/images/application.png" style="width: 90%; margin: 0 auto;">
+				</div>
+			</div>
+			<div class="red-button" id="to-top">RETURN TO TOP</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>BeeHome - Post Home</title>
+		<link rel="shortcut icon" type="image/png" href="/assets/images/logo.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  	<link rel="stylesheet" type="text/css" href="/assets/css/application.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/dashboard.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	  	<script src="/assets/javascript/dashboard.js"></script>
+	</head>
+	<body>
+		<% include ../partials/logged-in-header %>
+		<div class="container" id="dashboard-container">
+<!-- 			<div class="alert">
+				<img src="/assets/images/Asset1.png" id="alert">
+				Congratulations! You received one new application.
+				<div id="review-button"><a href="/application/frances">REVIEW</a></div>
+				<img src="/assets/images/Asset6.png" id="close-alert">
+			</div> -->
+			<div class="dashboard-row">
+				<div class="dashboard-section">
+					<div class="dashboard-header">My Profile</div>
+					<div class="content-box dashboard-content" id="profile">
+						<img src="/assets/images/auntmay.png" id="profile-picture">
+						<div id="edit-profile">
+							<div class="red-button">EDIT PROFILE</div>
+						</div>
+					</div>
+				</div>
+				<div class="dashboard-section" id="listing">
+					<div class="dashboard-header">My Listing</div>
+					<div class="content-box dashboard-content" id="listing">
+						<div id="listing-picture-container">
+							<img src="/assets/images/beehome_house.jpg" id="listing-picture">
+						</div>
+						<div id="listing-text">
+							Berkeley, CA 94612
+							<h2> Private 1-bedroom </h2>
+							A singling house with a sunny bedroom located in north Berkeley.
+						</div>
+						<div id="listing-buttons">
+							<div class="red-button">EDIT</div>
+							<div class="red-button">VIEW</div>
+							<div class="red-button">APPLICATIONS</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dashboard-row">
+				<div class="dashboard-section" id="messages">
+					<div class="dashboard-header">Messages</div>
+					<div class="content-box dashboard-content" id="messages">
+						<div class="message-section person">
+							<img src="/assets/images/newprofile.jpg" class="message-picture">
+							<div class="message-text">
+								<h2> Frances </h2>
+								12/8/2016
+							</div>
+							<div class="message-clip">
+								Hi, I'm interested in checking out your house. When would you be available?
+							</div>
+						</div>
+						<div class="message-section"><a href="/messages"> All Messages </a></div>
+					</div>
+				</div>
+			</div>
+			<div class="dashboard-row">
+				<div class="dashboard-section" id="preferences">
+					<div class="dashboard-header">My Preferences</div>
+					<div class="content-box dashboard-content" id="preferences">
+						<ul >
+							<li>Female, 19-30</li>
+							<li>Student</li>
+							<li>No Smoking</li>
+							<li>Chore hours: 2 hours/week</li>
+						</ul>
+						<div class="red-button" id="edit-preferences">EDIT</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

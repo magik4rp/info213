@@ -43,6 +43,16 @@ app.get('/message/:name', function(request, response) {
   var name = request.params.name;
   response.render('pages/individual-message', {name: name});
 });
+app.get('/application/:name', function(request, response) {
+  var name = request.params.name;
+  response.render('pages/application', {name: name});
+});
+app.get('/applications', function(request, response) {
+	response.render('pages/applications')
+});
+app.get('/dashboard', function(request, response) {
+	response.render('pages/dashboard')
+});
 
 app.get('*', function(req, res){
   res.render('pages/404');
